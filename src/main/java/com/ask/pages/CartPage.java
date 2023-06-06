@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class CartPage extends BasePage {
-
+    //cart page code
 
     @FindBy(xpath = "//a[normalize-space()='Blue Shoes']")
     WebElement productName;
