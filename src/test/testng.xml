@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AskOmDch" thread-count="2" parallel="tests">
+    <listeners>
+        <listener class-name="com.ask.analyzer.MyTransform"/>
+    </listeners>
+
+
+    <test name="AskTest"  parallel="methods" thread-count="6">
+        <parameter name="browser" value="CHROME"/>
+       <packages>
+            <package name="com.ask.test"/>
+        </packages>
+    </test>
+    <!--<test name="AskTest1" preserve-order="true" parallel="methods">
+        &lt;!&ndash;<packages>
+            <package name="com.ask.test"/>
+        </packages>&ndash;&gt;
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="com.ask.test.HomePageTest"/>
+            <class name="com.ask.test.StorePageTest"/>
+            <class name="com.ask.test.CartPageTest"/>
+            <class name="com.ask.test.CheckoutPageTest"/>
+
+        </classes>
+    </test>-->
+</suite>

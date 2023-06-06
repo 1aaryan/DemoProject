@@ -1,0 +1,10 @@
+{
+  "firstNameFld": "demo",
+  "lastNameFld": "test",
+  "countryName": "India",
+  "streetAddressFld": "pune",
+  "stateName": "Maharashtra",
+  "cityFld": "pune",
+  "zipFld": "12312",
+   "emailFld": "test@test.com"
+}
